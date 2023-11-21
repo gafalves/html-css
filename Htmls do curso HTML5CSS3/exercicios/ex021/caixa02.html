@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(45, 183, 253);
+            color: white;
+            margin: 0px;
+        }
+
+        header {
+            color: #0000ff;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.653);
+            border-radius: 0px 20px;
+        }
+
+        main {
+            background-color: white;
+            color: blue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 20px;
+            box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.653);
+        }
+
+        footer {
+            background-color: yellow;
+            color: blue;
+            text-align: center;
+            padding: 7px;
+            margin: 0px;
+        }
+
+        article {
+            background-color: lightblue;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: aqua;
+        }
+
+        nav {
+            background-color: lightblue;
+            padding: 3px;
+            box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.74);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        footer > p { 
+            margin: 0px;
+        }
+
+        h1 {
+            box-shadow: 3px 3px 5px 0px black
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="notícias">
+            <article>
+                <h2>Primeira Notícia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste similique nemo voluptates delectus distinctio esse dolorum veniam, quae exercitationem nisi qui, saepe, veritatis laboriosam tempora ipsum! Aut nisi omnis temporibus!</p>
+                <aside>Apuração feita por Lina Freire</aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Gabriel</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

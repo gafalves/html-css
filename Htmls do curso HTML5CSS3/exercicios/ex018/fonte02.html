@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Rainy Hearts';
+            src: url(fontes/rainyhearts.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format:
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+
+        }
+
+        @font-face {
+            font-family: 'LittleBird';
+            src: url(fontes/littlebird.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body{
+            font-family: 'Rainy Hearts'
+        }
+
+        h1{
+            font-family: 'LittleBird', Times, serif;
+            font-size: 3em;
+        }
+
+        p{
+            font-family: 'Rainy Hearts';
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse odio, dolores reprehenderit nihil exercitationem at voluptas? Architecto modi, molestiae, quaerat nisi rerum cupiditate maxime itaque dignissimos ut eum, necessitatibus eaque.</p>
+</body>
+</html>

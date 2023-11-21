@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*
+    Em HTML é id = em CSS é # (só pode 1 elemento por documento)
+    Em HTML é class = em CSS é . (pode vários elementos por documento)
+
+*/
+
+@font-face {
+    font-family: 'Rainy';
+    src: url(Fontes/rainyhearts.ttf);
+}
+
+body {
+    background-color: #43A6D1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#h1pr {
+    font-family: 'Rainy';
+    background-color: #1C4557;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+h1 {
+    color: #1C4557;
+    text-align: center;
+}
+
+h2 {
+    color: #29657F;
+    text-decoration: underline;
+}
+
+.basico {
+    color: rgb(1, 94, 1);
+}
+
+.intermediario {
+    color: rgb(88, 94, 1);
+}
+
+.avancado {
+    color: rgb(94, 1, 1);
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* Regra @charset caso haja problemas com acentuação */
+
+body{
+    background-color: blueviolet;
+    color: chartreuse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1{
+    background-color: brown;
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+h2{
+    color: darkblue;
+}
+
+a{
+    text-align: right;
+}
