@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: black;
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            border: 7px solid yellow;
+        }
+
+        td {
+            border: 1px solid rgb(63, 63, 250);
+            padding: 5px;
+            text-align: center; /*Alinhamento horizontal*/
+        }
+
+        td.c1 {
+            color: red;
+            background-color: blue;
+            vertical-align: top;
+        }
+        td.c2 {
+            color: chartreuse;
+            background-color: red;
+            vertical-align: middle;
+        }
+
+        td.c3 {
+            color: rgb(165, 150, 251);
+            background-color: aqua;
+            vertical-align: bottom;
+        }
+
+        td.marcado {
+            background-color: black;
+        }
+
+        th > h1 {
+            text-align: center;
+            padding: 1px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela em HTML</h1>
+    <!--HIERARQUIA DE TABELAS (SIMPLES)
+    TABLE
+        TABLE ROW
+            TABLE HEADER
+            TABLE DATA-->
+    <table>
+        <tr><!--Primeira linha-->
+            <td class="c1">A1</td>
+            <td class="c2">B1</td>
+            <td class="c3">C1</td>
+        </tr>
+        <tr><!--Segunda linha-->
+            <td class="c1">A2</td>
+            <td class="marcado">B2</td>
+            <td class="c3">C2</td>
+        </tr>
+        <tr><!--Terceira linha-->
+            <td class="c1">A3</td>
+            <td class="c2">B3</td>
+            <td class="c3">C3</td>
+        </tr>
+        <tr><!--Quarta linha-->
+            <td class="c1">A4</td>
+            <td class="c2">B4</td>
+            <td class="marcado">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
