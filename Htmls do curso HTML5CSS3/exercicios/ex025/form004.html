@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais exemplos de formulários</title>
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            width: 80vw;
+        }
+
+        fieldset {
+            border-radius: 5px;
+            border: 7px dashed blue;
+        }
+
+        legend {
+            font-size: 20px;
+        }
+
+        .botao {
+            border-radius: 5px;
+            font-size: 20px;
+            background-color: blue;
+            color: white;
+        }
+
+        div {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Mais um exemplo de formulário</h1>
+        <form action="cadastro.php" method="get">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required autocomplete="name" minlength="5" maxlength="20">
+                </p>
+                <p>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required autocomplete="email">
+                </p>
+                <p>
+                    <label for="itelefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="itelefone" required autocomplete="tel" placeholder="(xx)xxxxx-xxxx">
+                </p>
+            </fieldset>
+            <div>
+                <input type="submit" value="Enviar" class="botao">
+                <input type="reset" value="Limpar" class="botao">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
